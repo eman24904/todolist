@@ -25,18 +25,17 @@ public class Task extends JPanel {
 
         JPanel topRow = new JPanel(new BorderLayout(5, 0));
         topRow.setOpaque(false);
-        //eman
         taskName = new JTextField();
         taskName.setPreferredSize(new Dimension(100, 50)); // Smaller text field
         topRow.add(taskName, BorderLayout.CENTER);
-        // rania
+
         done = new JButton("Done");
         done.setPreferredSize(new Dimension(60, 20)); // Smaller button
         done.setFocusPainted(false);
         done.setBackground(new Color(0, 150, 30));
         done.setForeground(Color.WHITE);
         topRow.add(done, BorderLayout.EAST);
-        // eman
+
         done.addActionListener(e -> {
             try {
                 String taskText = taskName.getText().trim();
@@ -81,7 +80,7 @@ public class Task extends JPanel {
         timeField.setEditor(timeEditor);
         timeField.setPreferredSize(new Dimension(60, 20)); // Smaller size
         middleRow.add(timeField);
-        // -majd-
+
         reminderCheck = new JCheckBox("Reminder");
         reminderCheck.setBackground(Color.pink);
         middleRow.add(reminderCheck);

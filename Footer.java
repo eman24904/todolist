@@ -2,7 +2,7 @@ package classes;
 
 import javax.swing.*;
 import java.awt.*;
-// eman-add task- & rania -clear-
+
 public class Footer extends JPanel {
     private JButton addTask;
     private JButton clear;

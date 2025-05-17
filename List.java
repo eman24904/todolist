@@ -23,7 +23,7 @@ public class List extends JPanel {
         this.revalidate();
         this.repaint();
     }
-   // rania
+
     public void removeCompletedTasks() {
         Component[] items = getComponents();
         for (int i = items.length - 1; i >= 0; i--) {
